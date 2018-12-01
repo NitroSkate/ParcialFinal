@@ -9,4 +9,6 @@ var express = require('express'),
 
 router.post('/', alteracion.store);
 
+router.get('/', alteracion.show);
+
 module.exports = router;

@@ -24,3 +24,16 @@ exports.store = function(req,res){
         })
     };
 }
+
+exports.show = function(req,res){
+    colegio.find({}, function(err, items){
+        if(err){
+            console.log("ocurrio un error :c");
+            res.status=500;
+            
+        }
+        else{
+            console.log("Mostrando todo");
+        }
+    })
+};
