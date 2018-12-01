@@ -3,17 +3,18 @@ extends layout
 block content
   body
     header.header
+      i.fab.fa-phoenix-framework.icono
       h1 Administrador de tareas
     div.dv1
       form(name="formC", action="/api/colegios", method="post")
-        table
+        table(class="table table-striped")
           thead
             tr
-              td
+              th(scope="col")
                 label(for="nombre") Nombre del colegio:
-              td 
+              th(scope="col")
                 label(for="linea") Linea o compañia:
-              td 
+              th(scope="col")
                 label(for="mensua") Mensualidad:
           tbody
             tr
@@ -26,14 +27,14 @@ block content
               td
                 input.btn(type="submit" value="Ingresar datos")
     div.dv2
-      table
+      table(class="table table-striped")
         thead.thead
           tr.tr
-            td #
-            td Nombre
-            td Linea o compañia
-            td Mensualidad
-            td Opciones
-        tbody.cosas
+            th(scope="col") #
+            th(scope="col") Nombre
+            th(scope="col") Linea o compañia
+            th(scope="col") Mensualidad
+            th(scope="col") Opciones
+        tbody#cosas
   
   script(src="javascripts/acciones.js")

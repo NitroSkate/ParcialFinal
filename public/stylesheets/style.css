@@ -19,6 +19,19 @@ a {
   background-color: rgba(229,234,238,1);
 }
 
+.dv2{
+  margin-top: -1em !important;
+  border-top: rgba(195,206,220,1) solid 1px;
+  border-left: rgba(195,206,220,1) solid 1px;
+  border-right: rgba(195,206,220,1) solid 1px;
+}
+
+.icono{
+  font-size: 2em;
+  margin-top: 0.25em;
+  margin-right: .5em;
+}
+
 .btn{
   background-color: rgba(4,150,77,1);
   color: white;
