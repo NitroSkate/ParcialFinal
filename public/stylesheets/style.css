@@ -1,8 +1,40 @@
 body {
-  padding: 50px;
+  padding-left: 10em;
+  padding-right: 10em;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.header{
+  background-color: rgba(255,233,196,1);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.dv1{
+  background-color: rgba(229,234,238,1);
+}
+
+.btn{
+  background-color: rgba(4,150,77,1);
+  color: white;
+  height:2em;
+  width: 8em;
+}
+.btn:hover{
+  background-color: black;
+}
+
+.thead{
+  background-color: rgba(180,232,247,1);
+}
+
+.tr{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
 }
