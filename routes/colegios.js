@@ -11,4 +11,10 @@ router.post('/', alteracion.store);
 
 router.get('/', alteracion.show);
 
+router.get('/:id', alteracion.one);
+
+router.delete('/:id',alteracion.delete);
+
+router.put('/:id', alteracion.update);
+
 module.exports = router;
