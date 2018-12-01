@@ -3,6 +3,6 @@ const mongoose = require('mongoose');
 let colegio = new mongoose.Schema({
     Nombre: String,
     Linea: String,
-    Mensualidad: String
+    Mensualidad: Number
 });
 module.exports = mongoose.model('colegio', colegio);
