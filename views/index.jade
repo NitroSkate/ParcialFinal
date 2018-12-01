@@ -3,4 +3,8 @@ extends layout
 block content
   body
     header
-      
+      form(name="formC", action="/api/colegios", method="post")
+        label(for="nombre") Nombre del colegio
+        input#nombre(type="text", name="nombre", placeholder="Ingrese el nombre del colegio")
+        label(for="linea") Linea o 
+        input(type="submit" value="Ingresar datos")
