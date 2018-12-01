@@ -4,12 +4,34 @@ block content
   body
     header.header
       h1 Administrador de tareas
-    div
+    div.dv1
       form(name="formC", action="/api/colegios", method="post")
-        label(for="nombre") Nombre del colegio:
-        input#nombre(type="text", name="nombre", placeholder="Nombre del colegio", required)
-        label(for="linea") Linea o compañia:
-        input#linea(type="text", name="linea", placeholder="Linea o compañia", required)
-        label(for="mensua") Mensualidad:
-        input#mensua(type="number", name="mensua", required)
-        input(type="submit" value="Ingresar datos")
+        table
+          thead
+            tr
+              td
+                label(for="nombre") Nombre del colegio:
+              td 
+                label(for="linea") Linea o compañia:
+              td 
+                label(for="mensua") Mensualidad:
+          tbody
+            tr
+              td
+                input#nombre(type="text", name="nombre", placeholder="Nombre del colegio", required)
+              td
+                input#linea(type="text", name="linea", placeholder="Linea o compañia", required)
+              td
+                input#mensua(type="number", name="mensua", required)
+              td
+                input(type="submit" value="Ingresar datos")
+    div.dv2
+      table
+        thead
+          tr
+            td #
+            td Nombre
+            td Linea o compañia
+            td Mensualidad
+            td Opciones
+        tbody.cosas
